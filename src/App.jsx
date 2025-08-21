@@ -7,14 +7,14 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 // Q: 드롭다운 옵션은 왜 컴포넌트 바깥에 두는 이유?
 // A: 매번 렌더링할 때 새로 만들 필요가 없는 고정 데이터라서,
 //    컴포넌트 바깥에 두면 성능이 좋아지고 코드도 깔끔해집니다.
-const MAKES = ["Toyota", "Ford", "Porsche", "현대", "기아", "오즈코딩스쿨"];
+const MAKES = ["Toyota", "Ford", "Porsche", "현대", "기아", "너무어렵다"];
 const MODEL_BY_MAKE = {
   Toyota: ["Corolla", "Prius", "Supra"],
   Ford: ["Fiesta", "Mondeo", "Focus"],
   Porsche: ["911", "Boxster", "Cayman"],
   현대: ["아반떼", "소나타", "그랜저"],
   기아: ["레이", "K5", "EV6"],
-  오즈코딩스쿨: ["AI", "UI", "FRONTEND", "BACKEND", "FULLSTACK"]
+  너무어렵다: ["깃허브", "aws", "cicd", "BACKEND", "FULLSTACK"]
 };
 
 export default function App() {
