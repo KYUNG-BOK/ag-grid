@@ -27,8 +27,8 @@ jobs:
 
       - name: S3 기존 파일을 삭제 후 다시 업로드
         run: |
-          aws s3 rm --recursive s3://prod-aggrid
-          aws s3 cp ./dist s3://prod-aggrid/ --recursive
+          aws s3 rm --recursive s3://prod-ag-grid
+          aws s3 cp ./dist s3://prod-ag-grid/ --recursive
 
       - name: cloudfront 캐시 무효화
         run: aws cloudfront create-invalidation --distribution-id E19KXSKXB223N9 --paths "/*"
